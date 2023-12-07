@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --headed",
+    "singleRun": "npx cypress run --spec 'cypress//integration//examples//01_Test1.js'",
+    "cy:parallel": "cypress-parallel -t 2 -s test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "chai": "^4.3.10",
+    "cypress-parallel": "^0.13.0"
+  }
+}
